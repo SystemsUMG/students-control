@@ -1,0 +1,15 @@
+CREATE DATABASE school;
+
+USE school;
+
+CREATE TABLE students(
+    id  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    grade VARCHAR(100),
+    status VARCHAR(50),
+    created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DESCRIBE students;
